@@ -1,0 +1,29 @@
+<!-- Pedro Henrique Ferreira Silva -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contador de Palavras</h1>
+
+    <textarea id="texto" rows="4" cols="50" placeholder="Digite aqui"></textarea>
+
+    <p>Número de palavras digitadas: <span id="contador">0</span></p>
+    <script>
+   
+        var campoTexto = document.getElementById('texto');  
+        var contadorPalavras = document.getElementById('contador');
+
+        campoTexto.addEventListener('input', function() {
+          var texto = campoTexto.value;
+          var palavras = texto.split(/\s+/);
+          var numPalavras = palavras.length;    
+          contadorPalavras.textContent = numPalavras;
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-container img {
+    border: 5px solid #3498db;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+.imagem-container img:hover {
+    border-color: #e74c3c;
+}

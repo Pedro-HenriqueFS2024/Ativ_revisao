@@ -1,0 +1,44 @@
+<!-- Pedro Henrique Ferreira Silva -->
+]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item cat1">
+            <img src="img/alanzoka.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-item cat2">
+            <img src="img/gaules.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-item cat1">
+            <img src="img/Casimiro.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery-item cat3">
+            <img src="img/todosstreamers.jpeg" alt="Image 4">
+        </div>
+    </div>
+
+    <div>
+        <button onclick="filter('all')">Todos</button>
+        <button onclick="filter('cat1')">Categoria 1</button>
+        <button onclick="filter('cat2')">Categoria 2</button>
+        <button onclick="filter('cat3')">Categoria 3</button>
+    </div>
+    <script>
+        function filter(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

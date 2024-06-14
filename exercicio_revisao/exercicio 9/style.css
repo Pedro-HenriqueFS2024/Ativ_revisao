@@ -1,0 +1,21 @@
+#animacao{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 3.5s ease;
+}
+
+@keyframes growAnimation {
+    0% {
+        transform: scale(1);
+        background-color: lightblue;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: white;
+    }
+}
+
+#animacao.grow {
+    animation: growAnimation 2.5s forwards;
+}

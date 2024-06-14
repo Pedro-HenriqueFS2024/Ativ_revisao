@@ -1,0 +1,11 @@
+#preview {
+    display: flex;
+    flex-wrap: wrap;
+}
+.preview-item {
+    margin: 5px;
+}
+.preview-item img {
+    max-width: 150px;
+    max-height: 150px;
+}
